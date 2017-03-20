@@ -47,3 +47,19 @@
 
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;;
+;; UI
+;;
+
+;; line numbers
+(global-linum-mode 1)
+
+;; disable scroll bar
+(scroll-bar-mode -1)
+
+;; disable tool bar
+(tool-bar-mode -1)
+
+;; disable menu bar
+(menu-bar-mode -1)
