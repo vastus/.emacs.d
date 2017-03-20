@@ -63,3 +63,13 @@
 
 ;; disable menu bar
 (menu-bar-mode -1)
+
+;;
+;; Functions
+;;
+
+;; load-file current-file
+(defun my-load-current-file ()
+  "Load current file."
+  (interactive)
+  (load-file (buffer-file-name)))
