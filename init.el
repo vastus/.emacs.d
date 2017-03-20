@@ -55,6 +55,12 @@
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; hippie-expand
+(global-set-key (kbd "M-<tab>") 'hippie-expand)
+
+;; comments
+(global-set-key (kbd "s-/") 'comment-or-uncomment-region)
+
 
 ;;
 ;; UI
