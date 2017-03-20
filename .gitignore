@@ -1,8 +1,9 @@
-elpa/
 auto-save-list/
+elpa/
+
+data/*
 
 *~
-data/*
 *.swp
 
 !data/.gitkeep
