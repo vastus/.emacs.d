@@ -29,6 +29,13 @@
 
 
 ;;
+;; Load paths
+;;
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
+
+;;
 ;; Keyboard
 ;;
 
@@ -48,6 +55,7 @@
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
+
 ;;
 ;; UI
 ;;
@@ -63,6 +71,9 @@
 
 ;; disable menu bar
 (menu-bar-mode -1)
+
+;; theme
+(load-theme 'dorsey t)
 
 ;;
 ;; Functions
