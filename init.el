@@ -81,6 +81,10 @@
 ;; theme
 (load-theme 'dorsey t)
 
+;; matching parenthesis
+(show-paren-mode 1)
+
+
 ;;
 ;; Functions
 ;;
