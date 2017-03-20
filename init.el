@@ -44,3 +44,6 @@
 ;; switch buffers
 (global-set-key (kbd "C-x C-n") 'next-buffer)
 (global-set-key (kbd "C-x C-p") 'previous-buffer)
+
+;; magit
+(global-set-key (kbd "C-x g") 'magit-status)
