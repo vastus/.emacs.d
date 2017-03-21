@@ -15,6 +15,7 @@
 (let ((my/packages '(cider
 		      clojure-mode
 		      clojure-mode-extra-font-locking
+		      exec-path-from-shell
 		      magit
 		      paredit
 		      smex
