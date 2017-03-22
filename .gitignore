@@ -2,3 +2,6 @@ elpa/
 auto-save-list/
 
 *~
+data/*
+
+!data/.gitkeep
