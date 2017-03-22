@@ -3,5 +3,6 @@ auto-save-list/
 
 *~
 data/*
+*.swp
 
 !data/.gitkeep
