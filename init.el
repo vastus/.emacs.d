@@ -74,6 +74,9 @@
 ;; comments
 (global-set-key (kbd "s-/") 'comment-or-uncomment-region)
 
+;; smex
+(global-set-key (kbd "M-x") 'smex)
+
 
 ;;
 ;; UI
