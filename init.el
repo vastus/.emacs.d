@@ -31,6 +31,8 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+;; smex
+(smex-initialize)
 
 ;; ido
 (flx-ido-mode 1)
