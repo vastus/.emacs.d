@@ -83,6 +83,9 @@
 ;; smex
 (global-set-key (kbd "M-x") 'smex)
 
+;; backward kill line from point
+(global-set-key (kbd "s-<backspace>") 'my-backward-kill-line-from-point)
+
 
 ;;
 ;; UI
@@ -116,3 +119,9 @@
   "Load current file."
   (interactive)
   (load-file (buffer-file-name)))
+
+(defun my-backward-kill-line-from-point ()
+  "Kills line to the start of the line from point."
+  (interactive)
+  (kill-line 0))
+
