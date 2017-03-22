@@ -21,6 +21,7 @@
 		      ido-vertical-mode
 		      magit
 		      paredit
+		      projectile
 		      smex
 		      tagedit)))
   (dolist (p my/packages)
@@ -42,6 +43,9 @@
 (ido-everywhere 1)
 (setq ido-enable-flex-matching t)
 (setq ido-use-faces nil)
+
+;; projectile
+(projectile-mode 1)
 
 ;;
 ;; Load paths
