@@ -16,6 +16,9 @@
 		      clojure-mode
 		      clojure-mode-extra-font-locking
 		      exec-path-from-shell
+		      flx-ido
+		      ido-ubiquitous
+		      ido-vertical-mode
 		      magit
 		      paredit
 		      smex
@@ -28,6 +31,15 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+
+;; ido
+(flx-ido-mode 1)
+(ido-mode 1)
+(ido-ubiquitous-mode 1)
+(ido-vertical-mode 1)
+(ido-everywhere 1)
+(setq ido-enable-flex-matching t)
+(setq ido-use-faces nil)
 
 ;;
 ;; Load paths
