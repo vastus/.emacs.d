@@ -109,6 +109,10 @@
 ;; matching parenthesis
 (show-paren-mode 1)
 
+;; font
+(when (eq system-type 'gnu/linux)
+  (set-default-font "DejaVu Sans Mono 10"))
+
 
 ;;
 ;; Functions
