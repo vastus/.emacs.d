@@ -13,17 +13,17 @@
   (package-refresh-contents))
 
 (let ((my/packages '(cider
-		      clojure-mode
-		      clojure-mode-extra-font-locking
-		      exec-path-from-shell
-		      flx-ido
-		      ido-ubiquitous
-		      ido-vertical-mode
-		      magit
-		      paredit
-		      projectile
-		      smex
-		      tagedit)))
+                     clojure-mode
+                     clojure-mode-extra-font-locking
+                     exec-path-from-shell
+                     flx-ido
+                     ido-ubiquitous
+                     ido-vertical-mode
+                     magit
+                     paredit
+                     projectile
+                     smex
+                     tagedit)))
   (dolist (p my/packages)
     (unless (package-installed-p p)
       (package-install p))))
@@ -34,6 +34,7 @@
 
 ;; smex
 (smex-initialize)
+(setq smex-save-file (concat user-emacs-directory "data/" "smex-items"))
 
 ;; ido
 (flx-ido-mode 1)
@@ -46,6 +47,7 @@
 
 ;; projectile
 (projectile-mode 1)
+
 
 ;;
 ;; Load paths
@@ -109,9 +111,21 @@
 ;; matching parenthesis
 (show-paren-mode 1)
 
+;; no bell
+(setq ring-bell-function 'ignore)
+
 ;; font
 (when (eq system-type 'gnu/linux)
   (set-default-font "DejaVu Sans Mono 10"))
+
+
+;;
+;; Navigation
+;;
+
+;; recently opened files
+(recentf-mode 1)
+(setq recentf-max-menu-items 42)
 
 
 ;;
@@ -129,3 +143,10 @@
   (interactive)
   (kill-line 0))
 
+
+;;
+;; Performance (?)
+;;
+
+;; increase garbage collection threshold
+(setq gc-cons-threshold 20000000)
