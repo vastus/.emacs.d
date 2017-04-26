@@ -82,8 +82,14 @@
   :config
   (setq elm-format-on-save t))
 
+(use-package emmet-mode
+  :ensure t
+  :config
+  (add-hook 'sgml-mode-hook 'emmet-mode))
+
 (use-package wrap-region
   :ensure t)
+
 ;;
 ;; Load paths
 ;;
