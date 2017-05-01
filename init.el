@@ -77,6 +77,12 @@
   (setq hindent-reformat-buffer-on-save t)
   (add-hook 'haskell-mode-hook #'hindent-mode))
 
+(use-package multiple-cursors
+  :ensure t
+  :config
+  (require 'multiple-cursors)
+  (global-set-key (kbd "s-d") 'mc/mark-next-like-this))
+
 (use-package wrap-region
   :ensure t)
 
