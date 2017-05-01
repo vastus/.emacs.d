@@ -147,7 +147,7 @@
 (menu-bar-mode -1)
 
 ;; theme
-(load-theme 'dorsey t)
+(load-theme 'brin t)
 
 ;; matching parenthesis
 (show-paren-mode 1)
