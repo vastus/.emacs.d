@@ -67,6 +67,9 @@
   :config
   (add-hook 'sgml-mode-hook 'emmet-mode))
 
+(use-package haskell-mode
+  :ensure t)
+
 (use-package wrap-region
   :ensure t)
 
