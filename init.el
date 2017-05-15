@@ -65,7 +65,7 @@
     (ANY 2)
     (context 2)
     (describe 2)
-    (it))
+    (it)))
 
 (use-package editorconfig
   :ensure t
