@@ -52,6 +52,21 @@
 ;; projectile
 (projectile-mode 1)
 
+(use-package clojure-mode
+  :ensure t
+  :config
+  (define-clojure-indent
+    (defroutes 'defun)
+    (GET 2)
+    (POST 2)
+    (PUT 2)
+    (DELETE 2)
+    (HEAD 2)
+    (ANY 2)
+    (context 2)
+    (describe 2)
+    (it))
+
 (use-package editorconfig
   :ensure t
   :config
@@ -82,6 +97,14 @@
   :config
   (require 'multiple-cursors)
   (global-set-key (kbd "s-d") 'mc/mark-next-like-this))
+
+(use-package web-mode
+  :ensure t
+  :config
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-style-padding 2))
 
 (use-package wrap-region
   :ensure t)
