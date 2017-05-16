@@ -178,6 +178,8 @@
 (when (eq system-type 'gnu/linux)
   (set-default-font "DejaVu Sans Mono 10"))
 
+(when (eq system-type 'darwin)
+  (set-face-attribute 'default nil :height 140))
 
 ;;
 ;; Navigation
