@@ -63,9 +63,9 @@
     (DELETE 2)
     (HEAD 2)
     (ANY 2)
-    (context 2)
-    (describe 2)
-    (it)))
+    (context 'defun)
+    (describe 'defun)
+    (it 'defun)))
 
 (use-package editorconfig
   :ensure t
