@@ -52,6 +52,11 @@
 ;; projectile
 (projectile-mode 1)
 
+(use-package avy
+  :ensure t
+  :config
+  (global-set-key (kbd "C-ö") 'avy-goto-char))
+
 (use-package clojure-mode
   :ensure t
   :config
