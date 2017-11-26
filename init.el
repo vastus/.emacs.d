@@ -187,7 +187,10 @@
   (set-default-font "DejaVu Sans Mono 10"))
 
 (when (eq system-type 'darwin)
-  (set-face-attribute 'default nil :height 140))
+  (set-default-font "Fira Code 13"))
+;; or
+;; (when (eq system-type 'darwin)
+;;   (set-face-attribute 'default nil :height 130))
 
 ;;
 ;; Navigation
