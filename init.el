@@ -15,7 +15,6 @@
 (let ((my/packages '(
                       clojure-mode-extra-font-locking
                       diminish
-                      exec-path-from-shell
                       flx-ido
                       ido-ubiquitous
                       ido-vertical-mode
@@ -29,8 +28,10 @@
     (unless (package-installed-p p)
       (package-install p))))
 
-;; exec-path-from-shell
-(when (memq window-system '(mac ns))
+(use-package exec-path-from-shell
+  :if (memq window-system '(mac ns))
+  :ensure t
+  :config
   (exec-path-from-shell-initialize))
 
 ;; smex
