@@ -13,10 +13,8 @@
   (package-refresh-contents))
 
 (let ((my/packages '(
-                      clojure-mode
                       clojure-mode-extra-font-locking
                       diminish
-                      elm-mode
                       exec-path-from-shell
                       flx-ido
                       ido-ubiquitous
