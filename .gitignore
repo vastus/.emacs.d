@@ -5,6 +5,7 @@ elpa/
 data/*
 
 projectile-bookmarks.eld
+recentf
 
 *~
 *.swp
