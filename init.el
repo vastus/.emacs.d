@@ -73,6 +73,13 @@
     (describe 'defun)
     (it 'defun)))
 
+(use-package clj-refactor
+  :ensure t
+  :config
+  (cljr-add-keybindings-with-prefix "C-c C-m")
+  (add-hook 'clojure-mode-hook 'clj-refactor-mode)
+  (add-hook 'clojure-mode-hook 'yas-minor-mode))
+
 (use-package editorconfig
   :ensure t
   :config
