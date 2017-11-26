@@ -12,7 +12,7 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(let ((my/packages '(cider
+(let ((my/packages '(
                       clojure-mode
                       clojure-mode-extra-font-locking
                       diminish
@@ -56,6 +56,9 @@
   :ensure t
   :config
   (global-set-key (kbd "C-ö") 'avy-goto-char))
+
+(use-package cider
+  :ensure t)
 
 (use-package clojure-mode
   :ensure t
