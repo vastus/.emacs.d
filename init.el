@@ -20,7 +20,6 @@
                       ido-ubiquitous
                       ido-vertical-mode
                       magit
-                      paredit
                       projectile
                       smex
                       tagedit
@@ -110,6 +109,14 @@
   :config
   (require 'multiple-cursors)
   (global-set-key (kbd "s-d") 'mc/mark-next-like-this))
+
+(use-package paredit
+  :ensure t
+  :config
+  (add-hook 'clojure-mode-hook 'paredit-mode))
+
+(use-package restclient
+  :ensure t)
 
 (use-package web-mode
   :ensure t
