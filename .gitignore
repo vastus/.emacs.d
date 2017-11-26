@@ -1,7 +1,10 @@
+.cache/
 auto-save-list/
 elpa/
 
 data/*
+
+projectile-bookmarks.eld
 
 *~
 *.swp
