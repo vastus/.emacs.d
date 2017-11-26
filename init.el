@@ -28,12 +28,6 @@
     (unless (package-installed-p p)
       (package-install p))))
 
-(use-package exec-path-from-shell
-  :if (memq window-system '(mac ns))
-  :ensure t
-  :config
-  (exec-path-from-shell-initialize))
-
 ;; smex
 (smex-initialize)
 (setq smex-save-file (concat user-emacs-directory "data/" "smex-items"))
@@ -94,6 +88,12 @@
   :ensure t
   :config
   (add-hook 'sgml-mode-hook 'emmet-mode))
+
+(use-package exec-path-from-shell
+  :if (memq window-system '(mac ns))
+  :ensure t
+  :config
+  (exec-path-from-shell-initialize))
 
 (use-package haskell-mode
   :ensure t)
