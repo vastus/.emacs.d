@@ -218,6 +218,14 @@
 
 
 ;;
+;; Miscellanous
+;;
+
+;; enable server mode
+(server-mode t)
+
+
+;;
 ;; Performance (?)
 ;;
 
