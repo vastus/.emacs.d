@@ -65,7 +65,8 @@
     (ANY 2)
     (context 'defun)
     (describe 'defun)
-    (it 'defun)))
+    (it 'defun)
+    (match 1)))
 
 (use-package clj-refactor
   :ensure t
