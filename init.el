@@ -152,8 +152,8 @@
 ;;
 
 ;; switch buffers
-(global-set-key (kbd "C-x C-n") 'next-buffer)
-(global-set-key (kbd "C-x C-p") 'previous-buffer)
+(global-set-key (kbd "C-x C-n") 'my-next-buffer)
+(global-set-key (kbd "C-x C-p") 'my-previous-buffer)
 
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
@@ -230,6 +230,26 @@
   (interactive)
   (kill-line 0))
 
+;; skip global buffers when navigating to next/prev buffer
+(defun my-next-buffer ()
+  (interactive)
+  (let ((current-buffer-name (buffer-name)))
+    (next-buffer)
+    (while
+        (and
+         (string-match-p "^\*" (buffer-name))
+         (not (equal current-buffer-name (buffer-name))))
+      (next-buffer))))
+
+(defun my-previous-buffer ()
+  (interactive)
+  (let ((current-buffer-name (buffer-name)))
+    (previous-buffer)
+    (while
+        (and
+         (string-match-p "^\*" (buffer-name))
+         (not (equal current-buffer-name (buffer-name))))
+      (previous-buffer))))
 
 ;;
 ;; Miscellanous
