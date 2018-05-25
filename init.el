@@ -104,12 +104,10 @@
 (use-package haskell-mode
   :ensure t)
 
-(use-package hindent
+(use-package intero
   :ensure t
   :config
-  (setq hindent-process-path "~/.local/bin/hindent")
-  (setq hindent-reformat-buffer-on-save t)
-  (add-hook 'haskell-mode-hook #'hindent-mode))
+  (add-hook 'haskell-mode-hook #'intero-mode))
 
 (use-package js2-mode
   :ensure t
