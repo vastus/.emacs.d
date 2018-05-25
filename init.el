@@ -111,6 +111,12 @@
   (setq hindent-reformat-buffer-on-save t)
   (add-hook 'haskell-mode-hook #'hindent-mode))
 
+(use-package js2-mode
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+  (setq js-switch-indent-offset 2))
+
 (use-package multiple-cursors
   :ensure t
   :config
