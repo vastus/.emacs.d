@@ -140,6 +140,9 @@
 (use-package wrap-region
   :ensure t)
 
+(use-package yaml-mode
+  :ensure t)
+
 ;;
 ;; Load paths
 ;;
