@@ -96,6 +96,11 @@
   :config
   (exec-path-from-shell-initialize))
 
+(use-package flycheck
+  :ensure t
+  :config
+  (add-hook 'js-mode-hook 'flycheck-mode))
+
 (use-package haskell-mode
   :ensure t)
 
