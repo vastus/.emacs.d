@@ -74,6 +74,11 @@
   (add-hook 'clojure-mode-hook 'clj-refactor-mode)
   (add-hook 'clojure-mode-hook 'yas-minor-mode))
 
+(use-package company
+  :ensure t
+  :config
+  (add-hook 'after-init-hook 'global-company-mode))
+
 (use-package editorconfig
   :ensure t
   :config
