@@ -16,7 +16,6 @@
                       clojure-mode-extra-font-locking
                       diminish
                       flx-ido
-                      ido-ubiquitous
                       ido-vertical-mode
                       magit
                       projectile
@@ -34,10 +33,7 @@
 
 ;; ido
 (flx-ido-mode 1)
-(ido-mode 1)
-(ido-ubiquitous-mode 1)
 (ido-vertical-mode 1)
-(ido-everywhere 1)
 (setq ido-enable-flex-matching t)
 (setq ido-use-faces nil)
 
@@ -114,6 +110,13 @@
   :config
   (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
   (setq js-switch-indent-offset 2))
+
+(use-package ido-completing-read+
+	     :ensure t
+	     :config
+	     (ido-mode 1)
+	     (ido-everywhere 1)
+	     (ido-ubiquitous-mode 1))
 
 (use-package multiple-cursors
   :ensure t
