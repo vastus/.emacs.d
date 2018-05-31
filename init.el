@@ -40,6 +40,9 @@
 ;; projectile
 (projectile-mode 1)
 
+(use-package alchemist
+  :ensure t)
+
 (use-package avy
   :ensure t
   :config
