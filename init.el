@@ -140,6 +140,13 @@
 (use-package restclient
   :ensure t)
 
+(use-package smartparens
+  :ensure t
+  :config
+  (add-hook 'prog-mode-hook #'turn-on-smartparens-strict-mode)
+  (add-hook 'js-mode-hook #'smartparens-mode)
+  (add-hook 'ruby-mode-hook #'smartparens-mode))
+
 (use-package web-mode
   :ensure t
   :config
