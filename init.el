@@ -147,6 +147,14 @@
   (add-hook 'js-mode-hook #'smartparens-mode)
   (add-hook 'ruby-mode-hook #'smartparens-mode))
 
+(use-package tide
+  :ensure t
+  :after
+  (typescript-mode company flycheck)
+  :hook
+  ((typescript-mode . tide-setup)
+    (typescript-mode . tide-hl-identifier-mode)))
+
 (use-package web-mode
   :ensure t
   :config
