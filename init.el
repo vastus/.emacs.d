@@ -290,12 +290,14 @@
       (previous-buffer))))
 
 ;;
-;; Miscellanous
+;; Miscellaneous
 ;;
 
 ;; enable server mode
 (server-mode t)
 
+;; backups
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 
 ;;
 ;; Performance (?)
