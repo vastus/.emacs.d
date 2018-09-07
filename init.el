@@ -120,11 +120,11 @@
   (setq js-switch-indent-offset 2))
 
 (use-package ido-completing-read+
-	     :ensure t
-	     :config
-	     (ido-mode 1)
-	     (ido-everywhere 1)
-	     (ido-ubiquitous-mode 1))
+	:ensure t
+	:config
+	(ido-mode 1)
+	(ido-everywhere 1)
+	(ido-ubiquitous-mode 1))
 
 (use-package multiple-cursors
   :ensure t
