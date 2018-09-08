@@ -147,6 +147,18 @@
   :config
   (add-hook 'js2-mode-hook 'prettier-js-mode))
 
+(use-package psc-ide
+  :ensure t
+  :config
+  (add-hook 'purescript-mode-hook
+    (lambda ()
+      (psc-ide-mode)
+      (company-mode)
+      (flycheck-mode))))
+
+(use-package purescript-mode
+  :ensure t)
+
 (use-package restclient
   :ensure t)
 
