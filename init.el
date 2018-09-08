@@ -40,6 +40,11 @@
 ;; projectile
 (projectile-mode 1)
 
+(use-package add-node-modules-path
+  :ensure t
+  :config
+  (add-hook 'js-mode-hook #'add-node-modules-path))
+
 (use-package alchemist
   :ensure t)
 
