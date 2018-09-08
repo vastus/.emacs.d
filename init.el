@@ -142,6 +142,11 @@
   :config
   (add-hook 'clojure-mode-hook 'paredit-mode))
 
+(use-package prettier-js
+  :ensure t
+  :config
+  (add-hook 'js2-mode-hook 'prettier-js-mode))
+
 (use-package restclient
   :ensure t)
 
