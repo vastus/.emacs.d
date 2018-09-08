@@ -108,7 +108,7 @@
 (use-package flycheck
   :ensure t
   :config
-  (add-hook 'js-mode-hook 'flycheck-mode))
+  (add-hook 'js2-mode-hook 'flycheck-mode))
 
 (use-package haskell-mode
   :ensure t)
