@@ -147,6 +147,9 @@
   (add-hook 'js-mode-hook #'smartparens-mode)
   (add-hook 'ruby-mode-hook #'smartparens-mode))
 
+(use-package terraform-mode
+  :ensure t)
+
 (use-package tide
   :ensure t
   :after
