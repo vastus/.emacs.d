@@ -1,9 +1,13 @@
 .cache/
 auto-save-list/
 elpa/
+eshell/
 
 data/*
 
+custom.el
+ido.last
+network-security.data
 projectile-bookmarks.eld
 recentf
 
