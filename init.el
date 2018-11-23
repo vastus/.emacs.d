@@ -167,7 +167,9 @@
   :config
   (add-hook 'prog-mode-hook #'turn-on-smartparens-strict-mode)
   (add-hook 'js-mode-hook #'smartparens-mode)
-  (add-hook 'ruby-mode-hook #'smartparens-mode))
+  (add-hook 'ruby-mode-hook #'smartparens-mode)
+  :bind
+  ("C-)" . 'sp-forward-slurp-sexp))
 
 (use-package terraform-mode
   :ensure t)
