@@ -169,7 +169,8 @@
   (add-hook 'js-mode-hook #'smartparens-mode)
   (add-hook 'ruby-mode-hook #'smartparens-mode)
   :bind
-  ("C-)" . 'sp-forward-slurp-sexp))
+  ("C-)" . 'sp-forward-slurp-sexp)
+  ("C-(" . 'sp-forward-barf-sexp))
 
 (use-package terraform-mode
   :ensure t)
