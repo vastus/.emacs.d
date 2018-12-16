@@ -262,7 +262,7 @@
 (menu-bar-mode -1)
 
 ;; theme
-(load-theme 'brin t)
+(load-theme 'nord t)
 
 ;; matching parenthesis
 (show-paren-mode 1)
