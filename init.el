@@ -131,6 +131,9 @@
 	(ido-everywhere 1)
 	(ido-ubiquitous-mode 1))
 
+(use-package nord-theme
+  :ensure t)
+
 (use-package multiple-cursors
   :ensure t
   :config
