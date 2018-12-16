@@ -168,12 +168,17 @@
 (use-package smartparens
   :ensure t
   :config
+  (sp-local-pair 'js2-mode "{" nil :post-handlers '(:add ("||\n")))
+  (sp-local-pair 'typescript-mode "{" nil :post-handlers '(:add ("||\n")))
+  (sp-local-pair 'cc-mode "{" nil :post-handlers '(:add ("||\n")))
   (add-hook 'prog-mode-hook #'turn-on-smartparens-strict-mode)
   (add-hook 'js-mode-hook #'smartparens-mode)
   (add-hook 'ruby-mode-hook #'smartparens-mode)
   :bind
   ("C-)" . 'sp-forward-slurp-sexp)
-  ("C-(" . 'sp-forward-barf-sexp))
+  ("C-(" . 'sp-forward-barf-sexp)
+  ("C-S-d" . 'sp-unwrap-sexp)
+  ("s-F" . 'replace-regexp))
 
 (use-package terraform-mode
   :ensure t)
