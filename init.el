@@ -340,6 +340,9 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 
+;; fullscreen frame
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 ;;
 ;; Performance (?)
 ;;
