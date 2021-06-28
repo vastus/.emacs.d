@@ -269,12 +269,11 @@
 (when (eq system-type 'gnu/linux)
   (set-default-font "DejaVu Sans Mono 10"))
 
-(when (eq system-type 'darwin)
-  (set-default-font "Hasklig 13"))
-
-;; or
 ;; (when (eq system-type 'darwin)
-;;   (set-face-attribute 'default nil :height 130))
+;;   (set-default-font "Hasklig 13"))
+
+(when (eq system-type 'darwin)
+  (set-face-attribute 'default nil :height 130))
 
 ;;
 ;; Navigation
